@@ -1,0 +1,17 @@
+.searchInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.btn {
+  position: absolute;
+  right: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: #5d5dff;
+  padding: 13px;
+}

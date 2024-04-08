@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
-
+import { IoSearchSharp } from "react-icons/io5"
+import styles from "./styles.module.css"
 export default function Hero() {
   const [searchValue, setSearchValue] = useState("")
 
@@ -72,18 +73,22 @@ export default function Hero() {
               Protection and Decentralization.
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <input
-                style={{
-                  borderRadius: "20px",
-                  padding: "10px 30px",
-                  border: "solid 1px #5D5DFF",
-                  background: "#b6b9bb54",
-                  width: "80%",
-                }}
-                placeholder="Search proxi profile"
-                onChange={handleInputChange}
-              />
-              <button onClick={handleSearch}>Search</button>
+              <div className={styles.searchInput}>
+                <input
+                  style={{
+                    borderRadius: "20px",
+                    padding: "10px 30px",
+                    border: "solid 1px #5D5DFF",
+                    background: "#b6b9bb54",
+                    width: "80%",
+                  }}
+                  placeholder="Search proxi profile"
+                  onChange={handleInputChange}
+                />
+                <button className={styles.btn} onClick={handleSearch}>
+                  <IoSearchSharp />
+                </button>
+              </div>
             </div>
           </div>
 
