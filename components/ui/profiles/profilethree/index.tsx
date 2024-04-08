@@ -18,8 +18,8 @@ const ProfileThree = ({
             <div className={styles.progTier}>
               <Image
                 src={tier}
-                width={40}
-                height={40}
+                width={80}
+                height={80}
                 alt="tier 3"
                 className={styles.tierLogoImage}
               />
@@ -69,7 +69,7 @@ const ProfileThree = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>NFT #1</h3>
                 </div>
               </div>
               <div>
@@ -80,7 +80,7 @@ const ProfileThree = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>NFT #2</h3>
                 </div>
               </div>
               <div>
@@ -91,7 +91,7 @@ const ProfileThree = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>NFT #3</h3>
                 </div>
               </div>
               <div>
@@ -102,7 +102,7 @@ const ProfileThree = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>NFT #4</h3>
                 </div>
               </div>
               <div>
@@ -113,7 +113,7 @@ const ProfileThree = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>NFT #5</h3>
                 </div>
               </div>
               <div>
@@ -125,7 +125,7 @@ const ProfileThree = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>NFT #6</h3>
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ import ProfileTwo from "@/components/ui/profiles/profiletwo"
 import { useEffect, useState } from "react"
 import styles from "./styles.module.css"
 const Profile = ({ params }: { params: { slug: string } }) => {
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(0)
   const urlParams = new URLSearchParams(window.location.search)
   const id = urlParams.get("id")
 

@@ -11,7 +11,7 @@ export default function Hero() {
 
   const handleSearch = () => {
     if (searchValue.trim() !== "") {
-      const profileUrl = `https://proxiprotocol.netlify.app/profile/${searchValue.trim()}?id=1`
+      const profileUrl = `http://localhost:3000/profile/${searchValue.trim()}?id=1`
       window.open(profileUrl, "_blank")
     } else {
       alert("Please enter a search term.")

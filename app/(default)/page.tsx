@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Home - Open PRO",
-  description: "Page description",
+  title: "Proxi Protocol",
+  description: "Proxi Protocol",
 }
 
 import Features from "@/components/features"

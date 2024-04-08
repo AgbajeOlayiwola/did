@@ -21,8 +21,8 @@ const ProfileOne = ({
             <div className={styles.progTier}>
               <Image
                 src={tier}
-                width={40}
-                height={40}
+                width={80}
+                height={80}
                 alt="tier 3"
                 className={styles.tierLogoImage}
               />
@@ -80,7 +80,7 @@ const ProfileOne = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>Website #2</h3>
                 </div>
               </div>
               <div>
@@ -91,7 +91,7 @@ const ProfileOne = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>Website #3</h3>
                 </div>
               </div>
               <div>
@@ -102,7 +102,7 @@ const ProfileOne = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>Website #4</h3>
                 </div>
               </div>
               <div>
@@ -113,7 +113,7 @@ const ProfileOne = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>Website #5</h3>
                 </div>
               </div>
               <div>
@@ -125,7 +125,7 @@ const ProfileOne = ({
                   alt="Image"
                 />
                 <div className={styles.overlay}>
-                  <h3>Website #1</h3>
+                  <h3>Website #6</h3>
                 </div>
               </div>
             </div>
