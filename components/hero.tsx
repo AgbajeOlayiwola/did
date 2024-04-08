@@ -1,7 +1,23 @@
+"use client"
 import ModalVideo from "@/components/modal-video"
 import VideoThumb from "@/public/images/Taxi-Cab-DOOH-Ad-Car-Topper.jpg"
+import { useState } from "react"
 
 export default function Hero() {
+  const [searchValue, setSearchValue] = useState("")
+
+  const handleInputChange = (event: any) => {
+    setSearchValue(event.target.value)
+  }
+
+  const handleSearch = () => {
+    if (searchValue.trim() !== "") {
+      const profileUrl = `http://localhost:3001/profile/${searchValue.trim()}?id=1`
+      window.open(profileUrl, "_blank")
+    } else {
+      alert("Please enter a search term.")
+    }
+  }
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -47,34 +63,29 @@ export default function Hero() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4" data-aos="fade-up">
-              Get more eyes on your ADS
+              The Smart way to control your Digital Identity
             </h1>
             <p
               className="text-xl text-gray-400 mb-8"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Orbii is an advertising technology firm dedicated to assisting
-              rideshare drivers in boosting their earnings by showcasing digital
-              advertisements on their vehicles.
+              Experience the future of online identity authentication,
+              Protection and Decentralization.
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              <div data-aos="fade-up" data-aos-delay="400">
-                <a
-                  className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
-                  href="#0"
-                >
-                  Start free trial
-                </a>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="600">
-                <a
-                  className="btn text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                  href="#features"
-                >
-                  Learn more
-                </a>
-              </div>
+              <input
+                style={{
+                  borderRadius: "20px",
+                  padding: "10px 30px",
+                  border: "solid 1px #5D5DFF",
+                  background: "#b6b9bb54",
+                  width: "80%",
+                }}
+                placeholder="Search proxi profile"
+                onChange={handleInputChange}
+              />
+              <button onClick={handleSearch}>Search</button>
             </div>
           </div>
 

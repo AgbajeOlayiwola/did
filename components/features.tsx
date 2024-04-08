@@ -5,11 +5,9 @@ export default function Features() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">Revolutionize Business Outreach.</h2>
+            <h2 className="h2 mb-4">One Identity, Unlimited possibilities</h2>
             <p className="text-xl text-gray-400">
-              Our platform leverages the growing rideshare industry while
-              offering businesses an effective and dynamic way to reach a wider
-              audience.
+              Unlock the full potential of Digital identities with one platform.
             </p>
           </div>
 

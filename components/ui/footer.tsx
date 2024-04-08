@@ -22,9 +22,9 @@ export default function Footer() {
                 </Link>
               </div>
               <div className="text-gray-400">
-                Orbii is an advertising technology firm dedicated to assisting
-                rideshare drivers in boosting their earnings by showcasing
-                digital advertisements on their vehicles.
+                Proxi is a cutting-edge identity management system designed to
+                revolutionize the way individuals interact online with a focus
+                on authenticity, security, and decentralization
               </div>
             </div>
             {/* 2nd, 3rd and 4th blocks */}
@@ -153,7 +153,6 @@ export default function Footer() {
                 </ul>
               </div>
             </div> */}
-            git
           </div>
 
           {/* Bottom area */}
@@ -227,7 +226,7 @@ export default function Footer() {
 
             {/* Copyrights note */}
             <div className="text-gray-400 text-sm mr-4">
-              &copy; Orbiads. All rights reserved.
+              &copy; Proxi. All rights reserved.
             </div>
           </div>
         </div>

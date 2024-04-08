@@ -1,0 +1,106 @@
+.logoImage {
+  border-radius: 50%;
+}
+.outer {
+  display: flex;
+  justify-content: center;
+}
+.inner {
+  background: linear-gradient(rgb(15 10 10 / 50%), rgb(6 3 3 / 50%)),
+    linear-gradient(45deg, rgb(227 227 227 / 20%), rgb(0 0 0 / 20%));
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+}
+.profileImag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.profileId {
+  display: flex;
+
+  gap: 10px;
+  align-items: center;
+}
+.profileId h1 {
+  font-weight: 700;
+  color: rgb(234, 225, 202);
+  font-size: 16;
+}
+.profileId h1 {
+  font-weight: 400;
+  color: rgb(234, 225, 202);
+  font-size: 16;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.socialsDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: #ba7272;
+}
+.socialsDiv div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #fff;
+}
+.socialsDiv div h1 {
+  font-weight: 700;
+  color: rgb(234, 225, 202);
+  font-size: 16;
+}
+.portfolio {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+}
+.portLev h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.portfolio div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.overlay {
+  width: 75%;
+  background: #00000088;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.overlay h3 {
+  font-size: 20px;
+  color: #ebc9a6;
+}
+.progTier {
+  position: relative;
+}
+.tierLogoImage {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
