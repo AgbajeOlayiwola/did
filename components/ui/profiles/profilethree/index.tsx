@@ -3,7 +3,13 @@ import { FaBitcoin } from "react-icons/fa"
 import { FaEthereum } from "react-icons/fa6"
 import { TbCurrencySolana } from "react-icons/tb"
 import styles from "./styles.module.css"
-const ProfileThree = ({ tier }: { tier: string }) => {
+const ProfileThree = ({
+  tier,
+  profileId,
+}: {
+  tier: string
+  profileId: string
+}) => {
   return (
     <div className={styles.outer}>
       <div className={styles.inner}>
@@ -27,7 +33,7 @@ const ProfileThree = ({ tier }: { tier: string }) => {
             </div>
             <div className={styles.profileId}>
               <h1>Profile Id :</h1>
-              <h2>cdjkckdjf488e5qewd</h2>
+              <h2> {profileId}</h2>
             </div>
           </div>
           <div className={styles.socials}>

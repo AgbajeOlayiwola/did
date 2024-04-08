@@ -1,6 +1,4 @@
 "use client"
-import ModalVideo from "@/components/modal-video"
-import VideoThumb from "@/public/images/Taxi-Cab-DOOH-Ad-Car-Topper.jpg"
 import { useState } from "react"
 
 export default function Hero() {
@@ -12,7 +10,7 @@ export default function Hero() {
 
   const handleSearch = () => {
     if (searchValue.trim() !== "") {
-      const profileUrl = `http://localhost:3001/profile/${searchValue.trim()}?id=1`
+      const profileUrl = `https://proxiprotocol.netlify.app/profile/${searchValue.trim()}?id=1`
       window.open(profileUrl, "_blank")
     } else {
       alert("Please enter a search term.")
@@ -89,7 +87,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <ModalVideo
+          {/* <ModalVideo
             thumb={VideoThumb}
             thumbWidth={1024}
             thumbHeight={576}
@@ -97,7 +95,7 @@ export default function Hero() {
             video="/videos/video.mp4"
             videoWidth={1920}
             videoHeight={1080}
-          />
+          /> */}
         </div>
       </div>
     </section>

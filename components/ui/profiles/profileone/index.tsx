@@ -1,9 +1,18 @@
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 import { FaFacebook, FaTelegramPlane } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 import { RiInstagramFill } from "react-icons/ri"
 import styles from "./styles.module.css"
-const ProfileOne = ({ tier }: { tier: string }) => {
+const ProfileOne = ({
+  tier,
+  profileId,
+}: {
+  tier: string
+  profileId: string
+}) => {
+  const router = useRouter()
+  console.log(router)
   return (
     <div className={styles.outer}>
       <div className={styles.inner}>
@@ -26,7 +35,7 @@ const ProfileOne = ({ tier }: { tier: string }) => {
             </div>
             <div className={styles.profileId}>
               <h1>Profile Id :</h1>
-              <h2>sdkjehde12343332</h2>
+              <h2> {profileId}</h2>
             </div>
           </div>
           <div className={styles.socials}>
